@@ -4,7 +4,7 @@
       "hello_world": [{
         "shard_number" : 0,
         "hosts": [
-          "postgresql://benchmarkdbuser:benchmarkdbpass@tfb-database:5432/hello_world?sslmode=disable"
+          "postgresql://postgres:12345@localhost:5432/tmp"
         ]
       }]
     }
