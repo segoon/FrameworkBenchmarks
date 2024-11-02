@@ -29,7 +29,9 @@ components_manager:
                     set_tracing_headers: false
             server-name: us
         simple-router:
+            load-enabled: false
         simple-server:
+            load-enabled: false
             port: 8081
             task_processor: main-task-processor
         logging:
@@ -103,6 +105,7 @@ components_manager:
             task_processor: main-task-processor
 
         world-pg-cache:
+            load-enabled: false
             pgcomponent: hello-world-db
             chunk-size: 0 # fetch all rows at once
             update-types: only-full
@@ -110,6 +113,7 @@ components_manager:
             update-correction: 50ms
 
         cached-queries-handler:
+            load-enabled: false
             path: /cached-queries
             method: GET
             decompress_request: false
